@@ -1,8 +1,12 @@
-# spagett-api
+# spagett-api 🐕
 
 Backend for **Spagett** — a personalized, doge-themed AI chatbot, built with NestJS
 and the Claude API. Streams replies token-by-token and keeps short-term conversation
 memory.
+
+**Live app:** https://spagett-web.vercel.app
+&nbsp;·&nbsp; **Frontend repo:** [spagett-web](https://github.com/yashvisuals/spagett-web)
+_(free tier — the first reply may take ~30s while the API wakes up)_
 
 ## Stack
 - NestJS + TypeScript
