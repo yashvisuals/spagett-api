@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+
+# Secrets
+.env
+
+# Logs
+*.log
+
+# OS / editor
+.DS_Store
+.idea
+/coverage
