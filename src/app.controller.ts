@@ -9,4 +9,10 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+
+  // Lightweight endpoint for uptime pingers to keep the free instance awake.
+  @Get('health')
+  health() {
+    return { status: 'ok' };
+  }
 }

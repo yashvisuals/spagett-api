@@ -85,7 +85,7 @@ export class ChatService {
     }
 
     const stream = this.anthropic.messages.stream({
-      model: 'claude-opus-4-8',
+      model: 'claude-haiku-4-5',
       max_tokens: 2048,
       system: this.systemPrompt,
       messages: convo.messages.map((m) => ({ role: m.role, content: m.content })),
