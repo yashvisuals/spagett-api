@@ -10,7 +10,8 @@ _(free tier — the first reply may take ~30s while the API wakes up)_
 
 ## Stack
 - NestJS + TypeScript
-- Claude API (`@anthropic-ai/sdk`)
+- Claude API (`@anthropic-ai/sdk`) — model `claude-haiku-4-5` for fast replies
+  (swap the `model` in `src/chat/chat.service.ts` for Sonnet/Opus if you want more nuance)
 
 ## Run locally
 ```bash
@@ -24,6 +25,8 @@ Runs on http://localhost:4000.
 - `POST /conversations` — start a chat
 - `POST /conversations/:id/messages` — send a message, streams the reply
 - `GET /conversations/:id` — fetch a conversation
+- `GET /health` — lightweight check; point an uptime pinger here to keep the
+  free host awake and avoid cold-start delays
 
 ## Environment variables
 | Key | Purpose |
